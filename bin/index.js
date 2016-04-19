@@ -6,7 +6,7 @@
         options;
 
     program
-        .version('1.0.1')
+        .version('1.0.2')
         .usage('[options] <path, ...>')
         .option('-g, --generate <path> <output-directory-layout-file-path>', 'Generate directory layout')
         .option('-v, --verify <input-directory-layout-file-path> <path>', 'Verify directory layout')
