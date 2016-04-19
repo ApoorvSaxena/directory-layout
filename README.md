@@ -1,4 +1,4 @@
-### Directory Layout Verifier
+### Directory Layout
 
 Project builds can be complex, and the size and structure of the final build directory may be equally complex. While unit testing helps to ascertain if code is intact, "Directory Layout Verifier" tests that the build has resulted in correct creation of files / directories at respective positions, which otherwise takes unnecessary time to debug in case the build failed partially.
 
@@ -25,7 +25,7 @@ LayoutGenerator
 	});
 ```
 
-For layout verification:
+For directory layout verification:
 
 ```
 var LayoutVerifier = require('../lib/verify.js');
