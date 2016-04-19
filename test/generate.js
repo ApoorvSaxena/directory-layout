@@ -1,6 +1,6 @@
-var LayoutGenerator = require('../lib/generate.js');
+var DirectoryLayout = require('../lib/index.js');
 
-LayoutGenerator
+DirectoryLayout
 	.generate('test/fixtures/', {
 		output: './test/output/layout.md',
 		ignore: [

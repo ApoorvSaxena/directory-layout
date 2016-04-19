@@ -2,19 +2,18 @@
   "name": "directory-layout",
   "version": "1.0.1",
   "description": "Verifies directory layout for existence of files and folders in specified positions",
-  "main": "lib/verify.js",
+  "main": "lib/index.js",
   "author": "Apoorv Saxena",
   "license": "MIT",
   "directories": {
     "test": "test"
   },
   "bin": {
-    "verify": "bin/verify.js",
-    "generate": "bin/generate.js"
+    "directory-layout": "bin/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ApoorvSaxena/grunt-directory-layout"
+    "url": "https://github.com/ApoorvSaxena/directory-layout"
   },
   "dependencies": {
     "bluebird": "^3.3.5",

@@ -1,6 +1,6 @@
-var LayoutVerifier = require('../lib/verify.js');
+var DirectoryLayout = require('../lib/index.js');
 
-LayoutVerifier
+DirectoryLayout
 	.verify('test/output/layout.md', {
 		root: './test/fixtures'
 	})

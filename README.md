@@ -1,19 +1,61 @@
-### Directory Layout
+Directory Layout [![npm version](https://badge.fury.io/js/directory-layout.svg)](https://badge.fury.io/js/directory-layout)
+=====
+Verify your build's directory layout
+***
 
 Project builds can be complex, and the size and structure of the final build directory may be equally complex. While unit testing helps to ascertain if code is intact, "Directory Layout Verifier" tests that the build has resulted in correct creation of files / directories at respective positions, which otherwise takes unnecessary time to debug in case the build failed partially.
 
-Creation of directory structure is also automated, checkout our [tests](https://github.com/ApoorvSaxena/directory-layout/tree/master/test) folder for further understanding.
+Creation of directory structure is also automated, checkout our [tests](https://github.com/ApoorvSaxena/directory-layout/tree/master/test).
 
 We've used markdown syntax to store the directory structure, easy for you to verify visually. Here's an [example](https://raw.githubusercontent.com/ApoorvSaxena/directory-layout/master/test/output/layout.md).
 
-##### Usage:
+Installation
+-----
+
+- NPM: `npm install -g directory-layout`
+
+Usage:
+-----
+
+### From the command line: ###
+
+
+  Usage: `directory-layout [options] <path, ...>`
+
+  Options:
+
+    -h, --help                                                 output usage information
+    -V, --version                                              output the version number
+    -g, --generate <path> <output-directory-layout-file-path>  Generate directory layout
+    -v, --verify <input-directory-layout-file-path> <path>     Verify directory layout
+
+
+Example for *directory layout generation*:
+
+```
+$ directory-layout -g test/fixtures output.md
+Generating layout for test/fixtures...
+
+Layout generated at: output.md
+```
+
+Example for *directory layout verification*:
+
+```
+$ directory-layout -v output.md test/fixtures
+Verifying layout for test/fixtures ...
+
+Successfully verified layout available in output.md.
+```
+
+### Within node: ###
 
 For directory layout generation:
 
 ```
-var LayoutGenerator = require('../lib/generate.js');
+var DirectoryLayout = require('directory-layout');
 
-LayoutGenerator
+DirectoryLayout
 	.generate('test/fixtures/', {
 		output: './test/output/layout.md',
 		ignore: [
@@ -28,9 +70,9 @@ LayoutGenerator
 For directory layout verification:
 
 ```
-var LayoutVerifier = require('../lib/verify.js');
+var DirectoryLayout = require('directory-layout');
 
-LayoutVerifier
+DirectoryLayout
 	.verify('test/output/layout.md', {
 		root: './test/fixtures'
 	})
@@ -45,5 +87,7 @@ LayoutVerifier
 	});
 ```
 
-##### Coming soon:
-- Grunt and Gulp tasks
+Coming soon:
+-----
+
+Grunt and Gulp tasks
