@@ -5,8 +5,21 @@
   "main": "lib/verify.js",
   "author": "Apoorv Saxena",
   "license": "MIT",
+  "directories": {
+    "test": "test"
+  },
+  "bin": {
+    "verify": "bin/verify.js",
+    "generate": "bin/generate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ApoorvSaxena/grunt-directory-layout"
+  },
   "dependencies": {
+    "bluebird": "^3.3.5",
     "byline": "^4.2.1",
+    "commander": "^2.9.0",
     "node-dir": "^0.1.11",
     "underscore": "^1.8.3"
   },
@@ -14,5 +27,12 @@
     "test-layout-verifier": "node test/verify.js",
     "test-layout-generator": "node test/generate.js",
     "test": "npm run test-layout-generator && npm run test-layout-verifier"
-  }
+  },
+  "keywords": [
+    "directory",
+    "layout",
+    "structure",
+    "test"
+  ],
+  "readmeFilename": "README.md"
 }
