@@ -1,5 +1,10 @@
-Directory Layout [![npm version](https://badge.fury.io/js/directory-layout.svg)](https://badge.fury.io/js/directory-layout)
+Directory Layout
 =====
+
+[![npm version](https://badge.fury.io/js/directory-layout.svg)](https://badge.fury.io/js/directory-layout)
+[![dependencies](https://david-dm.org/ApoorvSaxena/directory-layout.svg)](https://david-dm.org/ApoorvSaxena/directory-layout)
+[![dev dependencies](https://david-dm.org/ApoorvSaxena/directory-layout/dev-status.svg)](https://david-dm.org/ApoorvSaxena/directory-layout#info=devDependencies)
+
 Verify your build's directory layout
 ***
 
@@ -91,3 +96,8 @@ Coming soon:
 -----
 
 Grunt and Gulp tasks
+
+License
+-----
+
+Copyright (c) 2016 Apoorv Saxena, http://apoorv.pro Licensed under the MIT license.
