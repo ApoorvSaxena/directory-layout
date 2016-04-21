@@ -92,10 +92,13 @@ DirectoryLayout
 	});
 ```
 
+### grunt-directory-layout ###
+If you are looking for the grunt plugin, head over to [grunt-directory-layout](https://github.com/ApoorvSaxena/grunt-directory-layout), created by @ApoorvSaxena
+
 Coming soon:
 -----
 
-Grunt and Gulp tasks
+Gulp task
 
 License
 -----
