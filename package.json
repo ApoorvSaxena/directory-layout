@@ -1,6 +1,6 @@
 {
   "name": "directory-layout",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Verifies directory layout for existence of files and folders in specified positions",
   "main": "lib/index.js",
   "author": "Apoorv Saxena",
